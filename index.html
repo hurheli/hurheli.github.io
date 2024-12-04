@@ -31,6 +31,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            filter: brightness(50%) blur(2px);
         }
         .content {
             position: absolute;
@@ -61,10 +62,9 @@
 
     <!-- Content -->
     <div class="content">
-	        <h1>هور هلی</h1>
-	    <br>
+        <h1>هور هلی</h1>
+        <br>
         <h1>سایت درحال بارگذاری میباشد...</h1>
-	    
         <p><strong>خدمات ما شما را شگفت زده خواهد کرد</strong></p>
     </div>
 
@@ -79,9 +79,12 @@
                 infinite: true,
                 fade: true,
                 arrows: false,
-                dots: false
+                dots: false,
+                cssEase: 'linear' // بهبود انتقال fade
             });
         });
     </script>
 </body>
 </html>
+
+<!-- تغییرات شامل اصلاح fade و اعمال فیلتر برای مات و تاریک کردن تصاویر بود -->
